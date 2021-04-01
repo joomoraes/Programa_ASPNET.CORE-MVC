@@ -11,3 +11,4 @@ Pode definir várias configurações
 <br><br>**Unity Work**: “mantém uma lista de objetos afetas por uma transação e coordena a escrito de mudanças e trta possíveis problemas de concorrência” – *Martin Fowler*
 <br><br>**Repository**: “define um objeto capaz de realizar operações de acesso a dados (consultar, salvar, atualizar, deletar) para uma entidade
 <br><br>**DBSet<TEntity>**:  representa a coleção de entidades de um dado tipo em um contexto. Tipicamente corresponde a uma tabela do banco de dados.
+<br><br> **Ian Sommerville** Conhecido como pai da engenharia de software, apresentou os modelos de desenvolvimento de software que deixaram de ser modelos puramente artisticos e passaram a ser modelos com desenvolvimento mais metódologico e operacional.
