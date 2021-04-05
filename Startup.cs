@@ -42,7 +42,7 @@ namespace SalesWebMVC
 
             services.AddDbContext<SalesWebMvcContext>(options =>
                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebMVCContext"), builder =>
-                   builder.MigrationsAssembly("SalesWebMVC")));
+                   builder.MigrationsAssembly("SalesWebMvc")));
 
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
