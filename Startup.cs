@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,8 +11,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using SalesWebMvc.Models;
+using SalesWebMvc.Data;
 using SalesWebMVC.Models;
-using SalesWebMVC.Data;
+using SalesWebMvc.Services;
 
 namespace SalesWebMVC
 {
@@ -37,10 +40,12 @@ namespace SalesWebMVC
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<SalesWebMVCContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("SalesWebMVCContext")));
+            services.AddDbContext<SalesWebMvcContext>(options =>
+                   options.UseSqlServer(Configuration.GetConnectionString("SalesWebMVCContext"), builder =>
+                   builder.MigrationsAssembly("SalesWebMVC")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

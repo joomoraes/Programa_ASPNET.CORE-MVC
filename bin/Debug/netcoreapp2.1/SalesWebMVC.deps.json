@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "SalesWebMVC/1.0.0": {
+      "SalesWebMvc/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
@@ -30,10 +30,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9"
         },
         "runtime": {
-          "SalesWebMVC.dll": {}
+          "SalesWebMvc.dll": {}
         },
         "compile": {
-          "SalesWebMVC.dll": {}
+          "SalesWebMvc.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3457,7 +3457,7 @@
     }
   },
   "libraries": {
-    "SalesWebMVC/1.0.0": {
+    "SalesWebMvc/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
